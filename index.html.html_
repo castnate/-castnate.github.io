@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+    <style>
+      body {background-color: BLACK;}
+      .header {
+              padding: 30px;
+              text-align: center;
+              background: black;
+              }
+      h1   {color: white;}
+      h2   {color: white;}
+      ul   {color: green;}
+      p    {color: green;}
+
+      .leftcolumn {   
+                  float: left;
+                  width: 75%;
+                  }
+
+      .footer {
+              padding: 20px;
+              text-align: center;
+              background: black;
+              margin-top: 20px;
+              }            
+      
+      </style>
+</head>
+
+<body>
+  <div class="header">
+      <h1>CURRICULUM VITAE</h1>
+      <h1>Fernando Bryant</h1>
+  </div>
+  
+  <div class="topnav">
+    <a href="Inicio">Inicio</a>
+    <a href="Datos personales">Datos Personales</a>
+    <a href="Formación Académica">Formación Académica</a>
+    <a href="Experiencia Laboral">Experiencia Laboral</a>
+    <a href="#" style="float:right">Contacto</a>
+
+    <form>
+      <input type="search" name="q" placeholder="Buscar" />
+      <input type="submit" value="Hace click" />
+    </form>
+  </div>
+  
+  <div class="row">
+    <div class="leftcolumn">
+
+      <div class="card">
+        <h2>Datos Personales</h2>
+
+        <ul>
+          <li>Dirección: 539 Pecan Acres Ln</li>
+          <li>Fecha de Nacimiento: 05/05/1990</li>
+          <li>Nacionalidad: Argentina</li>
+          <li>Teléfono: (421) 594-0858</li>
+          <li>Email: fbryant@example.com</li>
+        </ul>
+
+      </div>
+      <div class="card">
+        <h2>Formación Académica</h2>
+
+        <p>
+          Donec ut librero sed accu vehicula ultricies a non tortor. Lorem ipsum
+          dolor sit amet, consectetur adipisicing elit. Aenean ut gravida lorem.
+          Ut turpis felis, pulvinar a semper sed, adipiscing id dolor.
+        </p>
+
+        <p>
+          Pelientesque auctor nisi id magna consequat sagittis. Curabitur
+          dapibus, enim sit amet elit pharetra tincidunt feugiat nist imperdiet.
+          Ut convallis libero in urna ultrices accumsan. Donec sed odio eros.
+        </p>
+        
+      </div>
+
+      <div class="card">
+        <h2>Experiencia Laboral</h2>
+
+        <p>
+          Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum
+          soclis natoque penatibus et manis dis parturient montes, nascetur
+          ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem
+          facilisis semper ac in est.
+        </p>
+
+        <p>
+          Vivamus fermentum semper porta. Nunc diam velit, adipscing ut
+          tristique vitae sagittis vel odio. Maecenas convallis ullamcorper
+          ultricied. Curabitur ornare, ligula semper consectetur sagittis, nisi
+          diam iaculis velit, is fringille sem nunc vet mi.
+        </p>
+        
+      </div>
+
+    </div>
+   
+    <div class="rightcolumn">
+     
+      <div class="card">
+        <h2>Más sobre mí...</h2>
+        <img src="https://randomuser.me/api/portraits/men/73.jpg" alt="mi foto"> 
+        <p>Soy un apasionado del ajedrez y los juegos de mesa. También juego videojuegos, pero estos los prefiero colaborativos. Como lector empedernido, miro las adaptaciones a series y peliculas sólo para corroborar que el libro siempre es mejor. </p>
+      </div>
+     
+      <div class="card">
+        <h2>Mis redes sociales</h2>
+        <p>En Facebook e Instagram: @fer_chessbry </p>
+      </div>
+
+      <div class="card">
+        <h2>Por si andas perdido</h2>
+        <p>Click en el botón para ver tus coordenadas</p>
+        <button onclick="getLocation()">Tu Ubicación</button>
+        <p id="demo"></p>
+
+         <script>
+         const x = document.getElementById("demo");
+
+         function getLocation() {
+         if (navigator.geolocation) {
+           navigator.geolocation.getCurrentPosition(showPosition);
+         } else { 
+           x.innerHTML = "Geolocation is not supported by this browser.";
+         }
+         }
+
+        function showPosition(position) {
+          x.innerHTML = "Latitude: " + position.coords.latitude + 
+         "<br>Longitude: " + position.coords.longitude;
+         }
+        </script>
+
+
+      </div>
+   
+    </div>
+  </div>
+  
+  <div class="footer">
+    <h2>©Copyright 2023. Todos los derechos reservados.</h2>
+  </div>
+   
+  </body>
+</html>
+
