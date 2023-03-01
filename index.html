@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+    <style>
+        body {background-color:rgb(101, 146, 189);}
+
+        .header {
+                padding: 30px;
+                text-align: center;
+                background:rgb(8, 43, 117);
+                }
+
+        h1   {color: white;}
+        h2   {color: white;}
+        h4   {color: white}
+        ul   {color: rgb(193, 240, 238);}
+        p    {color: rgb(193, 240, 238)}
+
+        ul {
+           list-style-type: none;
+           margin: 0;
+           padding: 0;
+           overflow: hidden;
+           background-color:rgb(8, 43, 117)
+           }
+
+        li {
+           float: left;
+           }
+
+        li a {
+             display: inline-block;
+             color: white;
+             text-align: center;
+             padding: 14px 16px;
+             text-decoration: none;
+             }
+
+        li a:hover {
+                   background-color: #111;
+                   }
+ 
+        .leftcolumn {   
+                    float: left;
+                    width: 75%;
+                    }     
+
+        .footer {
+                text-align: center;
+                padding: 3px;
+                background-color:rgb(8, 43, 117);
+                color: white;
+                }            
+        
+    </style>
+</head>
+  
+  <body>
+    <div class="header">
+        <h1 style="font-family:verdana;">CURRICULUM VITAE</h1>
+        <h1>Fernando Bryant</h1>
+    </div>
+    
+    <div class="topnav">
+      <ul>
+        <li><a href="#Inicio">Inicio</a></li> 
+        <li><a href="#Datos personales">Datos Personales</a></li>  
+        <li><a href="#Formación Académica">Formación Académica</a></li> 
+        <li><a href="#Experiencia Laboral">Experiencia Laboral</a></li> 
+        <li><a href="Contacto">Contacto</a></li>
+      </ul>
+    </div>
+
+    <div class="leftcolumn">
+        <div class="card">
+          <h2 id="Datos personales">Datos Personales</h2>
+  
+          <p>
+            Dirección: 539 Pecan Acres Ln
+            <br>Fecha de Nacimiento: 05/05/1990
+            <br>Nacionalidad: Argentina
+            <br>Teléfono: (421) 594-0858
+            <br>Email: fbryant@example.com
+          </p>
+  
+        </div>
+        <div class="card">
+          <h2 id="Formación Académica">Formación Académica</h2>
+  
+          <p>
+            <b>Titulo de Grado:</b> Donec ut librero sed accu vehicula ultricies a non tortor. 
+            <br><b>Institución:</b> Lorem ipsumvdolor sit amet, consectetur adipisicing elit. Aenean ut gravida lorem.
+            <br><b>Año de graduación</b>2015
+          </p>
+  
+          <p>
+            <b>Titulo de Posgrado:</b> Donec ut librero sed accu vehicula ultricies a non tortor. 
+            <br><b>Institución:</b> Lorem ipsumvdolor sit amet, consectetur adipisicing elit. Aenean ut gravida lorem.
+            <br><b>Año de graduación</b>2019
+          </p>
+          
+        </div>
+  
+        <div class="card">
+          <h2 id="Experiencia Laboral">Experiencia Laboral</h2>
+
+          <p>
+            <b>Empresa:</b> viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum
+            <br><b>Puesto:</b> soclis natoque 
+            <br><b>Responsabilidades:</b> mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem
+            facilisis semper ac in est.
+            <br><b>Período:</b> 2020-actual
+          </p>
+          
+          <p>
+            <b>Empresa:</b> viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum
+            <br><b>Puesto:</b> soclis natoque 
+            <br><b>Responsabilidades:</b> mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem
+            facilisis semper ac in est.
+            <br><b>Período:</b> 2019-2020
+          </p>
+          
+          <p>
+            <b>Empresa:</b> viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum
+            <br><b>Puesto:</b> soclis natoque 
+            <br><b>Responsabilidades:</b> mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem
+            facilisis semper ac in est.
+            <br><b>Período:</b> 2016-2019
+          </p>
+  
+          <p>
+            <b>Empresa:</b> viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum
+            <br><b>Puesto:</b> soclis natoque 
+            <br><b>Responsabilidades:</b> mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem
+            facilisis semper ac in est.
+            <br><b>Período:</b> 2015-2016
+          </p>
+  
+          
+        </div>
+    </div>    
+     
+    <div class="rightcolumn">
+       
+        <div class="card">
+          <h2>Más sobre mí...</h2>
+          <img src="https://randomuser.me/api/portraits/men/73.jpg" alt="mi foto"> 
+          <p>Soy un apasionado del ajedrez y los juegos de mesa. También juego videojuegos, pero estos los prefiero colaborativos. Como lector empedernido, miro las adaptaciones a series y peliculas sólo para corroborar que el libro siempre es mejor. </p>
+        </div>
+       
+        <div class="card">
+          <h2>Mis redes sociales</h2>
+          <p>En Facebook e Instagram: @fer_chessbry </p>
+        </div>
+  
+        <div class="card">
+          <h2>Por si andas perdido</h2>
+          <p>Click en el botón para ver tus coordenadas</p>
+          <button onclick="getLocation()">Tu Ubicación</button>
+          <p id="demo"></p>
+  
+           <script>
+           const x = document.getElementById("demo");
+  
+           function getLocation() {
+           if (navigator.geolocation) {
+             navigator.geolocation.getCurrentPosition(showPosition);
+           } else { 
+             x.innerHTML = "Geolocation is not supported by this browser.";
+           }
+           }
+  
+           function showPosition(position) {
+            x.innerHTML = "Latitude: " + position.coords.latitude + 
+           "<br>Longitude: " + position.coords.longitude;
+           }
+           </script>
+        </div>
+    </div>
+
+    <footer>
+            <h4>©2023. Todos los derechos reservados<h4>       
+    </footer> 
+
+    </body>
+  </html>
